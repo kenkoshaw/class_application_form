@@ -1,0 +1,193 @@
+body,html {
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+}
+
+/*base component styles*/
+
+h2 {
+	text-align: center;
+	margin: none;
+}
+
+/*inputs*/
+
+.input, input[type='submit'], input[type='button'] {
+	background-color: #F7F7F7;
+	color: #555;
+	border: 1px solid #555;
+	border-radius: 5px;
+	width: 60%;
+	margin: 5px auto;
+	font-size: 16px;
+	outline: none;
+}
+
+input[type='submit'], input[type='button'] {
+	display: block;
+	width: 300px;
+	padding: 10px;
+	margin-top: 15px;
+}
+
+input[type='checkbox'] {
+	border: 0;
+}
+
+.input:hover, .input:focus,
+textarea:hover, textarea:focus {
+	background-color: #C8EBF8;
+}
+
+.input:hover + label, .input:focus + label,
+#area:hover + label, #area:focus + label,
+input[type='checkbox']:checked + label {
+	opacity: 1;
+	font-size: 17px;
+}
+
+input[type='submit']:hover, input[type='submit']:active {
+	background-color: #33CBA3;
+	color: white;
+	box-shadow: 0px 3px 10px -2px black;
+}
+
+input[name='reset']:hover, input[name='reset']:active,
+input[name='return']:hover, input[name='return']:active {
+	background-color: #F07D7D;
+}
+
+textarea {
+	background-color: #F7F7F7;
+	color: #555;
+	border: 1px solid #555;
+	border-radius: 5px;
+	width: 60%;
+	margin: 5px auto;
+	font-size: 16px;
+	outline: none;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    resize: none;
+}
+
+/*/inputs*/
+/*/base component styles*/
+
+/*styles for sections*/
+
+header,footer {
+	background-color: navy;
+	color: white;
+	text-align: center;
+	font-family: verdana;
+	padding: 10px;
+}
+
+body {
+	background-image: url('white_squares.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	min-height: 100vh;
+}
+
+form {
+	margin: 10px auto;
+	width: 100%;
+}
+
+.form, #success {
+	max-width: 725px;
+	width: 90%;
+	display: block;
+	background-color: #EEE;
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: #555;
+	border: 2px solid #555;
+	border-radius: 10px;
+	margin: 30px auto;
+	padding: 5px;
+	opacity: 0.75;
+}
+
+.form:hover {
+	opacity: 1;
+}
+
+div.text, div.checkbox, div.textarea, #final {
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	padding: 15px;
+	flex-direction: column;
+}
+
+div.text > div, div.checkbox > div, div.textarea > div {
+	display: flex;
+	align-items: center;
+	width: 90%;
+	margin: 5px auto;
+	font-size: 16px;
+}
+
+div.checkbox > div {
+	height: 20px;
+}
+
+div.textarea > div {
+	flex-direction: row-reverse;
+}
+
+div.text > div {
+	flex-direction: row-reverse;
+}
+
+div.text label, div.textarea label {
+	width: 35%;
+	font-size: 16px;
+	opacity: 0.75;
+}
+
+div.checkbox label {
+	font-size: 16px;
+	margin-left: 5px;
+	opacity: 0.75;
+}
+
+#check_title {
+	margin: 0;
+}
+
+span.error {
+	color: red;
+}
+
+#required {
+	margin-left: 7%;
+}
+
+div.error:empty {
+	display: none;
+}
+
+#confirm {
+	margin: 30px auto;
+	max-width: 500px;
+	padding: 0px 30px;
+	overflow-wrap: break-word;
+}
+
+#submitButtons {
+	display: flex;
+	margin 0 auto;
+	justify-content: space-between;
+}
+
+#success {
+	opacity: 1;
+	text-align: center;
+	height: 100%;
+}
